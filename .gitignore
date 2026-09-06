@@ -5,8 +5,9 @@
 node_modules/
 
 # Build output
-dist/
 build/
+dist/
+coverage/
 
 # Logs
 *.log

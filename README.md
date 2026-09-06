@@ -1,82 +1,68 @@
 # Vardha Warehousing
 
-A static marketing website for a warehouse and logistics business, built with React and Vite. The app includes service pages, client information, solutions, facility details, a calculator, FAQs, contact information, and modal-driven content.
-
-## Project location
-
-The application source is inside the [`VRADHA-JS`](./VRADHA-JS) folder.
+A static marketing website for a warehouse and logistics business, built with React and Vite. The site includes service pages, client information, solutions, facility details, a space calculator, FAQs, contact information, and modal-driven content.
 
 ## Tech stack
 
-- React 19
-- Vite
-- JavaScript / JSX
-- CSS
-- Tailwind CSS 4
-- Node.js and npm
+| Layer        | Technology                              |
+| ------------ | --------------------------------------- |
+| UI           | React 19 (JSX)                          |
+| Build tool   | Vite 6                                  |
+| Styling      | Tailwind CSS 4 + custom CSS             |
+| Language     | JavaScript (no TypeScript)              |
+| Runtime      | Node.js 18+ and npm                     |
 
-## Prerequisites
+## Getting started
 
-- Node.js 18 or newer
-- npm
-
-## Installation
-
-From this folder, open a terminal and run:
+**Prerequisites:** Node.js 18 or newer and npm.
 
 ```bash
-cd VRADHA-JS
+# Install dependencies
 npm install
-```
 
-## Run locally
+# Start the dev server
+npm run dev
 
-```bash
-npm run dev -- --host 0.0.0.0 --port 4173
-```
-
-Then open `http://localhost:4173/` in a browser.
-
-## Production build
-
-```bash
+# Production build
 npm run build
+
+# Preview the production build locally
+npm run preview
 ```
 
-To preview the production build locally:
-
-```bash
-npm run preview -- --host 0.0.0.0 --port 4173
-```
+By default the dev server runs on `http://localhost:3000/`.
 
 ## Project structure
 
-The main application files are organized as follows:
+```
+.
+├── index.html            # Application entry HTML
+├── package.json          # Project scripts and dependencies
+├── vite.config.js        # Vite configuration
+├── public/
+│   └── images/           # Public image assets
+└── src/
+    ├── main.jsx          # React entry point
+    ├── App.jsx           # Main application component
+    ├── index.css         # Global styles (incl. custom styling)
+    ├── components/       # Reusable modals, header, and footer
+    ├── data/             # Page and warehouse data
+    └── screens/          # Website screens and page sections
+```
 
-- `VRADHA-JS/index.html` — application entry HTML
-- `VRADHA-JS/package.json` — project scripts and dependencies
-- `VRADHA-JS/vite.config.js` — Vite configuration
-- `VRADHA-JS/public/images/` — public image assets
-- `VRADHA-JS/src/App.jsx` — main application component
-- `VRADHA-JS/src/main.jsx` — React entry point
-- `VRADHA-JS/src/index.css` — global styles
-- `VRADHA-JS/src/components/` — reusable modals, header, and footer
-- `VRADHA-JS/src/data/` — page and warehouse data
-- `VRADHA-JS/src/screens/` — website screens and page sections
+## Screens
+
+- Home
+- About
+- Facility
+- Solutions
+- Clients
+- Use cases
+- Calculator (space / pricing estimator)
+- FAQ
+- Contact
 
 ## Notes
 
+- Custom styling is primarily defined in `src/index.css`.
 - This project does not use TypeScript.
-- The app is organized as a marketing site with reusable components, data files, and screen components.
-- Custom styling is primarily defined in `VRADHA-JS/src/index.css`.
-
-## Useful commands
-
-Run these commands from the `VRADHA-JS` folder:
-
-```bash
-npm install
-npm run dev -- --host 0.0.0.0 --port 4173
-npm run build
-npm run preview -- --host 0.0.0.0 --port 4173
-```
