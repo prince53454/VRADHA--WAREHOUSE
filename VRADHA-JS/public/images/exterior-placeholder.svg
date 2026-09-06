@@ -1,0 +1,69 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyExt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a3f5c"/>
+      <stop offset="100%" stop-color="#0e1c2f"/>
+    </linearGradient>
+    <linearGradient id="buildingExt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3a5273"/>
+      <stop offset="100%" stop-color="#213145"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#skyExt)"/>
+
+  <!-- ground -->
+  <rect x="0" y="470" width="900" height="130" fill="#1a2740"/>
+  <rect x="0" y="470" width="900" height="10" fill="#ffb95f" opacity="0.6"/>
+
+  <!-- main warehouse block -->
+  <rect x="80" y="230" width="740" height="260" fill="url(#buildingExt)"/>
+  <rect x="80" y="230" width="740" height="16" fill="#0e1c2f"/>
+
+  <!-- roofline -->
+  <polygon points="60,230 450,140 840,230" fill="#16233a"/>
+
+  <!-- dock doors -->
+  <g fill="#0e1c2f">
+    <rect x="130" y="330" width="70" height="140"/>
+    <rect x="230" y="330" width="70" height="140"/>
+    <rect x="330" y="330" width="70" height="140"/>
+    <rect x="430" y="330" width="70" height="140"/>
+  </g>
+  <g fill="none" stroke="#4a6280" stroke-width="3">
+    <rect x="130" y="330" width="70" height="140"/>
+    <rect x="230" y="330" width="70" height="140"/>
+    <rect x="330" y="330" width="70" height="140"/>
+    <rect x="430" y="330" width="70" height="140"/>
+  </g>
+
+  <!-- windows strip -->
+  <g fill="#7ea3d1" opacity="0.55">
+    <rect x="560" y="270" width="50" height="35"/>
+    <rect x="625" y="270" width="50" height="35"/>
+    <rect x="690" y="270" width="50" height="35"/>
+    <rect x="755" y="270" width="50" height="35"/>
+  </g>
+
+  <!-- signage -->
+  <rect x="330" y="255" width="240" height="34" rx="4" fill="#0b1c30"/>
+  <text x="450" y="278" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#ffb95f" text-anchor="middle" letter-spacing="2">VARDHA WAREHOUSING</text>
+
+  <!-- loading apron / trucks -->
+  <g>
+    <rect x="150" y="475" width="120" height="55" rx="4" fill="#0e1c2f"/>
+    <rect x="150" y="475" width="120" height="14" fill="#ffb95f"/>
+    <circle cx="175" cy="530" r="10" fill="#0b1c30"/>
+    <circle cx="245" cy="530" r="10" fill="#0b1c30"/>
+  </g>
+  <g>
+    <rect x="620" y="480" width="130" height="48" rx="4" fill="#152238"/>
+    <rect x="620" y="480" width="130" height="12" fill="#77849c"/>
+    <circle cx="645" cy="528" r="9" fill="#0b1c30"/>
+    <circle cx="720" cy="528" r="9" fill="#0b1c30"/>
+  </g>
+
+  <!-- road markings -->
+  <g stroke="#ffffff" stroke-width="4" opacity="0.25" stroke-dasharray="18 14">
+    <line x1="0" y1="555" x2="900" y2="555"/>
+  </g>
+</svg>
