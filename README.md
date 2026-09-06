@@ -1,6 +1,8 @@
 # Vardha Warehousing
 
-A static marketing website for a warehouse and logistics business, built with React and Vite. The site includes service pages, client information, solutions, facility details, a space calculator, FAQs, contact information, and modal-driven content.
+A static marketing website for a warehouse and logistics business, built with React and Vite. The site includes service pages, client information, solutions, facility details, a space calculator, FAQ and contact pages.
+
+Live demo: https://vradha-warehouse.vercel.app/
 
 ## Tech stack
 
